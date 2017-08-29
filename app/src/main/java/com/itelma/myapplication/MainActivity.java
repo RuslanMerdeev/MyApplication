@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         temp = (TextView) findViewById(R.id.textView2);
         pres = (TextView) findViewById(R.id.textView3);
         hum = (TextView) findViewById(R.id.textView4);
+
+        new Request().execute();
     }
 
     class Request extends AsyncTask<Void, Void, Void> {
