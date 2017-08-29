@@ -1,5 +1,6 @@
 package com.itelma.myapplication;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.view.View;
 import android.widget.TextView;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     public TextView temp;
     public TextView pres;
     public TextView hum;
+    public TextView info;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
         temp = (TextView) findViewById(R.id.textView2);
         pres = (TextView) findViewById(R.id.textView3);
         hum = (TextView) findViewById(R.id.textView4);
+        info = (TextView) findViewById(R.id.textView6);
+        info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(intent);
+            }
+        });
 
         new Request().execute();
     }

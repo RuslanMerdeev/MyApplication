@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="about_text">
+        Author: R.Z.Merdeev\n
+        Description: show information about\n
+        temperature, pressure and humidity\n
+        in Togliatti city\n
+        Source: http://www.btlt.ru/info/temperature\n
+        (\"strong\" tag)\n
+        Purpose: to study Android Studio
+    </string>
+    <string name="about_title">About application</string>
 </resources>
