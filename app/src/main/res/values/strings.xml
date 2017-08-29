@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">TLTWeather</string>
     <string name="about_text">
         Author: R.Z.Merdeev\n
         Description: show information about\n
